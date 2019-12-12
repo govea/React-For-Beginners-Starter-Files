@@ -4,26 +4,12 @@ import { getFunName } from '../helpers';
 class StorePicker extends React.Component {
   myInput = React.createRef();
   
-  // 1st approach
+  // TIP: If you need to use 'this' inside a custom function, use the arrow syntax
   // ===================
-  constructor() {
-    super();
-    this.goToStore = this.goToStore.bind(this);
-    console.log('Gonna create a component');
-  }
-
-  goToStore(event) {
+  goToStore = (event) => {
     event.preventDefault();
-    console.log(this);        // damn! we need the bind in the constructor for this to be bound
-    //  Change the page to store/whatever-they-entered
+    console.log(this.myInput);    // Yay!! this is bound to the component when using the arrow function!
   }
-  
-  // 2nd approach
-  // ===================
-  // goToStore = (event) => {
-  //   event.preventDefault();
-  //   console.log(this);    // Yay!! this is bound to the component when using the arrow function!
-  // }
 
   render() {
     console.log(this); 
