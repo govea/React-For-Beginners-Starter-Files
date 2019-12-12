@@ -1,8 +1,18 @@
 import React from 'react';
+import { format } from 'path';
+import { unlink, link } from 'fs';
 
 class StorePicker extends React.Component {
-    render() {
-        return React.createElement('p', {className: 'hey'}, 'Heyyo');
+    render() { 
+        return (
+            // To be able to return more than one element. React.Fragment renders to nothing
+            <React.Fragment>
+                <p>Fish!</p>
+                <form action="" className="store-selector">
+                    <h2>Please Enter a Store</h2>
+                </form>
+            </React.Fragment>
+        )
     }
 }
 
