@@ -5,6 +5,7 @@ import { unlink, link } from 'fs';
 class StorePicker extends React.Component {
     render() { 
         return (
+            { /* But don't put comments up here, it's going to fail */ }
             // To be able to return more than one element. React.Fragment renders to nothing
             <React.Fragment>
                 <p>Fish!</p>
