@@ -2,7 +2,7 @@ import React from 'react';
 
 class StorePicker extends React.Component {
     render() {
-        return <p>I am the StorePicker</p>
+        return React.createElement('p', {className: 'hey'}, 'Heyyo');
     }
 }
 
