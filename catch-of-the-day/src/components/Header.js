@@ -1,8 +1,7 @@
 import React from 'react';
 
 // Stateless Functional Components
-const Header = (props) => {
-  return (
+const Header = (props) => (
     <header className="top">
         <h1>Catch 
           <span className="ofThe">
@@ -14,8 +13,7 @@ const Header = (props) => {
           <span>{this.props.tagline}</span>
         </h3>
       </header>
-  )
-};
+);
 
 class Header extends React.Component {
   render () {
