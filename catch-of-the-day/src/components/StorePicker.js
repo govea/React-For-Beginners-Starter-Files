@@ -9,6 +9,7 @@ class StorePicker extends React.Component {
             <React.Fragment>
                 <p>Fish!</p>
                 <form action="" className="store-selector">
+                    { /*Hey look JSX! I'm using brackets, that means I want to do some Javascript */}
                     <h2>Please Enter a Store</h2>
                 </form>
             </React.Fragment>
