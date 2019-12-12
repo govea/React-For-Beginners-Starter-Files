@@ -8,7 +8,8 @@ class StorePicker extends React.Component {
   // ===================
   goToStore = (event) => {
     event.preventDefault();
-    console.log(this.myInput);    // Yay!! this is bound to the component when using the arrow function!
+    const storeName = this.myInput.current.value;    // Yay!! this is bound to the component when using the arrow function!
+    this.props.history.push(`/store/${storeName}`);
   }
 
   render() {
