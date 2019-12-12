@@ -5,7 +5,7 @@ class StorePicker extends React.Component {
     return (
       // To be able to return more than one element. React.Fragment renders to nothing
       <React.Fragment>
-        <p>Fish!</p>
+        <span></span>
         <form action="" className="store-selector">
             { /*Hey look JSX! I'm using brackets, that means I want to do some Javascript */}
             <h2>Please Enter a Store</h2>
